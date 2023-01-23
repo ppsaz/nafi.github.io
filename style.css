@@ -15,11 +15,7 @@ button.assets {
     color: mintcream;
     background-color: rgba(121, 120, 117, 0.089);
     border: none;
-    font-family: 'Tangerine' Verdana, Geneva, Tahoma, 'poppins';
-}
-
-button.assets::backdrop {
-    font-display: text;
+    font-family: 'Tangerine' Verdana, Tahoma, 'poppins';
 }
 
 button.assets:hover {

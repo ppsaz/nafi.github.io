@@ -1,474 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-10">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="nafineodivfe">
+    <meta name="vieBreakfast Solutionport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nafineolife">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&family=Tangerine:wght@400;700&family=Unna&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&display=swap'); </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
-    <script data-dojo-config="async: 1, dojoBlankHtmlUrl: '/path/to/blank.html'"></script>
-    <script>
-            const anotherRequest = new Request(myRequest, myInit);
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;400&family=Tangerine:wght@400;1400&family=Unna&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>NAFiNEOLife</title>
-    <a href="https://www.nafineolife.com"></a>
+    <a id="domain" href="https://www.nafineolife.com"></a>
 
     <style>
-        html {
-            background-color: rgb(5, 5, 5);
-            width: auto;
-            border-left: 0.5px;
-            border-right: 0.5pt;
-            padding-bottom: 0.5%;
-            padding-left: 0.5%;
-            padding-right: 0.5%;
-            margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 0%;
-            margin-right: 0%;
-            scale: 100%;
-            height: auto;
-
-        }
-
         body {
-            display: inline;
             align-items: center;
             text-align: center;
-            width: auto;
+            width: initial;
+            height: initial;
             padding-top: 0.5%;
             padding-bottom: 0.5%;
-            padding-left: 0.5%;
-            padding-right: 0.5%;
-            margin-top: 0.5%;
+            padding-left: 0.3%;
+            padding-right: 0.3%;
+            margin-top: 0%;
             margin-bottom: 0.5%;
             margin-left: 0%;
             margin-right: 0%;
-            border-radius: 2px;
-            background-color: rgb(5, 5, 5);
-            scroll-behavior: smooth;
+            border-radius: 4px;
+            background-color: white;
+            float: center;
+            position: sticky;
         }
 
-        header.nav {
+        header {
+            background-color: rgb(5, 5, 5);
+            padding-top: 2%;
+            padding-bottom: 3%;
+            padding-left: 0.3%;
+            padding-right: 0.3%;
+            margin-top: 0.3%;
+            margin-bottom: 0%;
+            margin-left: 0.3%;
+            margin-right: 0.3%;
+            width: initial;
+            height: initial;
+            float: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            position: static;
+        }
+
+        header span {
+            background-color: transparent;
+            padding-top: 0.3%;
+            padding-bottom: 0%;
+            padding-left: 1%;
+            margin-left: 0%;
+            margin-right: 2%;
+            width: initial;
+            height: initial;
+            flex-basis: content;
+            float: left;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        header div {
             align-items: center;
             align-items: center;
             text-align: center;
-            word-spacing: 16px;
-            background-color: rgb(5, 5, 5);
+            background-color: transparent;
             padding-top: 0.5%;
             padding-bottom: 0.5%;
-            padding-left: 0px;
+            padding-left: 1px;
             padding-right: 0px;
-            margin-top: 1px;
+            margin-top: 0.5px;
             margin-bottom: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            width: auto;
-            flex-basis: content;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
+            flex-basis: auto;
+            float: center;
         }
 
-        span#logo {
-            align-items: center;
-            align-items: center;
+        article.opened {
             text-align: center;
-            border-radius: 50px;
-            padding-top: 0%;
+            float: center;
+            background-color: rgb(5, 5, 5);
+            padding-top: 0.5%;
             padding-bottom: 0%;
             padding-left: 0%;
-            padding-right: 0.1%;
-            margin-top: 0.5%;
-            margin-bottom: 0.5px;
-            margin-right: 10px;
-            margin-left: 0px;
-            width: auto;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0.3%;
+            margin-right: 0.3%;
+            width: initial;
+            height: initial;
+            position: static;
         }
 
-        span#menu {
-            display: inline;
-            border-radius: 16px;
-            margin-top: 0px;
-            margin-bottom: 1px;
-            margin-left: 1px;
-            margin-right: 1px;
-            padding-top: 3px;
-            padding-bottom: 1px;
-            padding-left: 8px;
-            padding-right: 8px;
-            font-size: 133%;
-            color: seagreen;
-            background-position: center;
-            background-color: transparent;
-            width: auto;
-            align-items: center;
-            text-align: center;
-            align-items: center;
-        }
-
-        span#menu:hover {
-            flood-color: #ff9900;
-            color: gold;
-            background-color: seagreen;
-        }
-
-        span.search {
-            border-radius: 50px;
-            padding-left: 20%;
-            padding-right: 20%;
-            margin-top: 5px;
-            margin-bottom: 1px;
-            margin-right: 5px;
-            padding-top: 0.1%;
-            padding-bottom: 0.1%;
-            background-color: rgba(121, 120, 117, 0.089);
-            color: blue;
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-        }
-
-        div#marketing {
-            background-color: rgb(15, 134, 10);
-            align-items: center;
-            align-items: center;
-            text-align: center;
-            padding-top: 0%;
-            padding-bottom: 0%;
-            padding-left: 0.5%;
-            padding-right: 0.5%;
+        div.welcome {
+            color: white;
+            font-family: 'Segoe UI';
+            font-size: 150%;
+            font-weight: 400;
+            word-spacing: 0px;
+            background-color: rgb(15, 144, 10);
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
             margin-top: 0%;
             margin-bottom: 0%;
             margin-left: 0%;
             margin-right: 0%;
-            width: auto;
+            width: initial;
+            height: initial;
+        }
+
+        a#home {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        a#About {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        a#See {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Sponsor {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Events {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+
+
+        a#Countries {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Centers {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Matrix {
+            padding-left: 1%;
+            padding-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        div.marketing {
+            background-color: rgb(15, 144, 10);
+            align-items: center;
+            text-align: center;
+            font-family: Verdana;
+            padding-top: 4px;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
             border-top-left-radius: 1px;
             border-top-right-radius: 1px;
             border-bottom-left-radius: 1px;
             border-bottom-right-radius: 1px;
         }
 
-        section.intro {
-            font-family: Verdana, Tahoma, sans-serif;
-            color: #ff9900;
+        div.intro {
             background-color: rgb(5, 5, 5);
-            border-top-left-radius: 1px;
-            border-top-right-radius: 1px;
-            border-bottom-left-radius: 1px;
-            border-bottom-right-radius: 1px;
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
+            padding-top: 0%;
+            padding-bottom: 0%;
             margin-top: 0%;
             margin-bottom: 0%;
+        }
+
+        img#Neolife_Products_2 {
+            width: initial;
+            height: initial;
         }
 
         h2#profession {
-            font-size: 110%;
-            font-weight: 200;
-            font-family: Verdana, Tahoma, sans-serif;
-            color: #ff9900;
-            background-color: rgb(5, 5, 5);
+            font-family: 'Vardana';
+            font-size: 300%;
+            font-weight: 400;
+            color: rgb(5, 5, 5);
+            background-color: #ff9900;
             border-top-left-radius: 1px;
             border-top-right-radius: 1px;
             border-bottom-left-radius: 1px;
             border-bottom-right-radius: 1px;
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 0.9%;
+            padding-right: 0.9%;
             margin-top: 0%;
             margin-bottom: 0%;
+            width: initial;
+            height: initial;
         }
 
-        h5#message {
-            font-size: 90%;
-            font-weight: 200;
-            font-family: Verdana, Tahoma, sans-serif;
-            color: #ff9900;
-            background-color: rgb(5, 5, 5);
+        h5#zero_150 {
+            font-family: 'Vardana';
+            font-size: 300%;
+            font-weight: 400;
+            color: rgb(5, 5, 5);
+            background-color: rgb(15, 144, 10);
             border-top-left-radius: 1px;
             border-top-right-radius: 1px;
             border-bottom-left-radius: 1px;
             border-bottom-right-radius: 1px;
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 0.9%;
+            padding-right: 0.9%;
             margin-top: 0%;
             margin-bottom: 0%;
+            width: initial;
+            height: initial;
         }
 
         h4#message {
+            font-family: 'Segoe UI';
+            font-size: 170%;
+            font-weight: 400;
+            color: white;
+            background-color: rgb(15, 144, 10);
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 0.9%;
+            padding-right: 0.9%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            width: initial;
+            height: initial;
+
+        }
+
+        nav.product_list {
+            display: flex;
+            background-color: white;
             color: rgb(5, 5, 5);
-            font-family: Verdana, Tahoma, sans-serif;
-            font-size: 120%;
-            font-weight: 500;
-            word-spacing: 10px;
-            background-color: rgb(15, 134, 10);
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0.3%;
+            margin-right: 0.3%;
+            float: center;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            width: initial;
+            height: initial;
+        }
+
+        span.product {
+            align-items: center;
+            text-align: center;
+            padding-top: 0%;
+            padding-bottom: 1%;
             padding-left: 0%;
             padding-right: 0%;
             margin-top: 1%;
             margin-bottom: 1%;
-            margin-left: 0%;
-            margin-right: 0%;
+            margin-left: 0.1%;
+            margin-right: 0.1%;
+            background-color: rgb(5, 5, 5);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            float: center;
+            width: initial;
+            height: initial;
         }
 
-        nav.product_list {
+        span.pick {
+            text-align: center;
+            background-color: transparent;
+            padding-top: 0.3%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            margin: 0%;
+            width: auto;
+            flex-basis: content;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        span.details {
             background-color: rgb(5, 5, 5);
-            display: flex;
-            color: mintcream;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        div.name {
             align-items: center;
             text-align: center;
-            padding-top: 0%;
-            padding-bottom: 0%;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 142%;
+            font-weight: 200;
+            word-spacing: 5px;
+            background-color: green;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        span.supplement {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 142%;
+            font-weight: 200;
+            background-color: darkred;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0.7%;
+            padding-right: 0.7%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-radius: 7px;
+        }
+
+        div.prescription {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 142%;
+            font-weight: 200;
+            word-spacing: 5px;
+            background-color: green;
+            padding-top: 3%;
+            padding-bottom: 3%;
             padding-left: 0%;
             padding-right: 0%;
             margin-top: 0%;
             margin-bottom: 0%;
             margin-left: 0%;
             margin-right: 0%;
-            width: auto;
-            border-top-left-radius: 1px;
-            border-top-right-radius: 1px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
         }
 
-        section.product {
+        div.price {
             align-items: center;
             text-align: center;
-            display: inline;
-            font-size: 100%;
+            font-size: xx-large;
+            font-family: 'Poppins';
             padding-top: 0.5%;
-            padding-bottom: 1%;
-            margin-top: 0.5%;
-            margin-bottom: 1%;
-            background-color: orange;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            padding-bottom: 0.5%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: green;
+            background-color: white;
         }
 
-        section.details {
+        div.price:hover {
             background-color: rgb(5, 5, 5);
-            padding-top: 1%;
-            padding-bottom: 1%;
-        }
-
-        h1.price {
-            font-size: 150%;
-        }
-
-        span.name {
-            display: inline;
-            align-items: center;
-            text-align: center;
-            width: auto;
-            color: mintcream;
-            font-family: 'poppings';
-            font-size: 100%;
-            font-weight: 500;
-            word-spacing: 7px;
-            background-color: rgb(15, 134, 10);
-            padding-top: 1%;
-            padding-bottom: 1%;
-            padding-left: 1%;
-            padding-right: 1%;
-            margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 0%;
-            margin-right: 0%;
-        }
-
-        span.supplement {
-            display: inline;
-            align-items: center;
-            text-align: center;
-            width: auto;
-            color: mintcream;
-            font-family: Verdana, 'Segoe UI', Tahoma;
-            font-size: 90%;
-            font-weight: 500;
-            word-spacing: 7px;
-            background-color: darkred;
-            padding-top: 0%;
-            padding-bottom: 0%;
-            padding-left: 1%;
-            padding-right: 1%;
-            margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 0%;
-            margin-right: 0%;
-        }
-
-        span.prescription {
-            align-items: center;
-            text-align: center;
-            width: auto;
-            display: inline;
-            width: auto;
-            font-family: Verdana, 'Segoe UI', Tahoma;
-            color: orange;
-            background-color: rgb(5, 5, 5);
-            font-size: 80%;
-            font-weight: 200;
-            word-spacing: 3px;
-            padding-top: 0%;
-            padding-bottom: 1%;
-            padding-left: 1%;
-            padding-right: 1%;
-            margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 0%;
-            margin-right: 0%;
+            color: green;
         }
 
         a:link{
-            color: gold;
+            color: rgb(5, 5, 5);
             text-decoration: none;
         }
 
         a:visited {
-            color: gold;
+            color: green;
         }
 
         a:hover {
-            color: seagreen;
-            animation-duration: 3ms;
+            color: green;
         }
 
-        span.price {
-            display: inline;
-            align-items: center;
-            text-align: center;
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
-            padding-left: 5%;
-            padding-right: 5%;
-            margin-top: 0.5%;
-            margin-bottom: 0%;
-            border-radius: 50px;
-            color: mintcream;
-            background-color: rgb(15, 134, 10);
+        footer.action {
+            background-color: white;
+            font-size: 100%;
+        }
+
+        div.action {
+            background-color: rgb(5, 5, 5);
+            font-size: 100%;
+        }
+
+        a#call_neolife {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 1%;
+            padding-right: 2%;
+        }
+
+        a#call_nafi {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 2%;
+            padding-right: 1%;
+        }
+
+        a#nafdac {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 1%;
+            padding-right: 2%;
+        }
+
+        a#usda {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 2%;
+            padding-right: 1%;
         }
 
     </style>
 
 </head>
-    <body>
-        <header class="nav">
-            <span id="logo"><img src="NafiNEOLife 2.png" alt="NafiNEOLife 2.png image" width="70" height="70"></span>
-            <span id="menu"><b><img id="buttons" src="Home V2.png" alt="Home V2.png" width="52" height="52" aria-haspopup="menu"></b></span>
-            <span id="menu"><a href="#"><img id="buttons" src="About Us V2.png" alt="About Us V2.png" width="52" height="52" aria-haspopup="menu"></a></span>
-            <span id="menu"><a href="#"><img id="buttons" src="See V2.png" alt="See V2.png" width="52" height="52" aria-haspopup="menu"></a></span>
-            <span id="menu"><a href="#"><img id="buttons" src="Sponsor V2.png" alt="Sponsor V2.png" width="52" height="52" aria-haspopup="menu"></a></span>
-            <span id="menu"><a href="#"><img id="buttons" src="Events.png" alt="Events.png" width="52" height="52" aria-haspopup="menu"></a></span>
-            <span id="menu"><a href="#"><img id="buttons" src="Countries.png" alt="Countries.png" width="52" height="52" aria-haspopup="menu"></a></span>
-            <span id="menu"><a href="#"><img id="buttons" src="Gofor Centers.png" alt="Gofor Centers.png" width="52" height="52" aria-haspopup="menu"></a></span>
-            <span id="menu"><a href="#"><img id="buttons" src="Matrix.png" alt="Matrix.png" width="52" height="52" aria-haspopup="menu"></a></span>
-            <br><br>
-                <span class="class">
-                    <form class="assets">
-                        <button class="assets" type="text" onclick="https://nafi">search</button>
-                        <input class="assets" type="text" name="searchbox" placeholder="Supplement Name or ID" size="30" onkeyup="('product')" />
-                        <button class="reset" type="reset" aria-hidden="true">clear</button>
-                    </form>
-                </span>
-            <br>
-        </header>
-        <div id="marketing">
-                <img id="Neolife_Products_Dispay" src="Neolife Products 2.png" width="70%" height="50%" />
+<body>
+    <header>
+        <div>
+            <span class="logo"><img src="NafiNEOLife 2.png" alt="NafiNEOLife 2.png LOGO" width="140" height="140"></span>
+            <b id="Home" href=""><img aria-details="Home" src="Home V2.png" alt="Home V2.png" width="140" height="140"></b>
+            <a id="About" href="#"><img id="About" src="About Us V2.png" alt="About Us V2.png" width="140" height="140"></a>
+            <a id="See" href="#"><img id="See" src="See V2.png" alt="See V2.png" width="140" height="140"></a>
+            <a id="Sponsor V2" href="#"><img id="Sponsor" src="Sponsor V2.png" alt="Sponsor V2.png" width="140" height="140"></a>
+            <a id="Events"  href="#"><img id="Events" src="Events.png" alt="Events.png" width="140" height="140"></a>
+            <a id="Countries"  href="#"><img id="Countries" src="Countries.png" alt="Countries.png" width="140" height="140"></a>
+            <a id="Centers"  href="#"><img id="Gofor Centers" src="Gofor Centers.png" alt="Gofor Centers.png" width="140" height="140"></a>
+            <a id="Matrix" href="#"><img id="Matrix" src="Matrix.png" alt="Matrix.png" width="140" height="140"></a>
         </div>
-        <section class="intro">
-            <h2 id="profession">
-                Science Baked Natural<br>
-                <h5 id="message">Update Your Health
-                    With NEOLIFE Supplements.
-                </h5>
-                <h4 id="message">Be Energetic And A Motivating Syntax.</h4>
+    </header>
+    <article class="opened">
+        <div class="welcome">Welcome To NAFiNEOLife Of NEOLIFE<br>
+            </div>
+        <div class="marketing">
+        <img id="Neolife_Products_2" src="Neolife Products 2.png" alt="Neolife Products 2.png image" width="100%" height="195%"/>
+        </div>
+        <div class="intro"><h2 id="profession">Baked By Science.<br>
+                <h5 id="zero_150">Get NEOLIFE Supplements.</h5>
+                <h4 id="message">Be Energetic And A Motivating Syntax Now.</h4>
             </h2>
-        </section>
-            <nav class="product_list" aria-colindex="">
-                <section class="product">
-                        <img src="Acidophilus Plus.png" alt="Acidophilus Plus.png image" width="95%" height="190%" />
-                        <section class="details">
-                        <a href="https://shopneolife.com/nafineolife/shop/product/2514N"><h1 class="price">Buy</h1></a>
-                    <span class="name">
-                        Acidophilus Plus
-                    </span><br><br>
-                    <span class="supplement">
-                        Diabetes Supplement
-                    </span><br>
-                    <span class="prescription">
-                        Take 3Daily<br>1@Morning 1@Noon 1@Night
-                    </span>
-                    </section>
-                </section>
-                <section class="product">
-                    <img src="All Natural Fibre.png" alt="All Natural Fibre.png image" width="95%" height="190%" />
-                    <section class="details">
-                    <a href="https://shopneolife.com/nafineolife/shop/product/2514N"><h1 class="price">Buy</h1></a>
-                <span class="name">
-                    All Natural Fibre
-                </span><br><br>
-                <span class="supplement">
-                    Diabetes Supplement
-                </span><br>
-                <span class="prescription">
-                    Take 3Daily<br>1@Morning 1@Noon 1@Night
+        </div>
+    </article>
+        <nav class="product_list">
+            <span class="product">
+                <span class="pick">
+                    <img id="3 Day Detox" src="3 Day Detox.png" alt="3 Day Detox.png image" width="100%" height="195%"/>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
                 </span>
-            </section>
-            </section>
-            </nav>
-            <nav class="product_list" aria-colindex="">
-                <section class="product">
-                        <img src="Ami Tone 90 Tablets.png" alt="Ami Tone 90 Tablets.png image" width="95%" height="190%" />
-                        <section class="details">
-                        <a href="https://shopneolife.com/nafineolife/shop/product/2514N"><h1 class="price">Buy</h1></a>
-                    <span class="name">
-                        Ami Tone 90 Tablets
-                    </span><br><br>
-                    <span class="supplement">
-                        Diabetes Supplement
-                    </span><br>
-                    <span class="prescription">
-                        Take 3Daily<br>1@Morning 1@Noon 1@Night
-                    </span>
-                    </section>
-                </section>
-                <section class="product">
-                    <img src="Betagard.png" alt="Betagard.png image" width="95%" height="190%" />
-                    <section class="details">
-                    <a href="https://shopneolife.com/nafineolife/shop/product/2514N"><h1 class="price">Buy</h1></a>
-                <span class="name">
-                    Betagard
-                </span><br><br>
-                <span class="supplement">
-                    Diabetes Supplement
-                </span><br>
-                <span class="prescription">
-                    Take 3Daily<br>1@Morning 1@Noon 1@Night
+                <span class="details">
+                    <div class="name">3 Day Detox</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                    <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
                 </span>
-            </section>
-            </section>
-            </nav>
-            <script>
-                const xhr = new XMLHttpRequest();
-                xhr.open("POST", "https://nafineolife.com/doc");
-                xhr.setRequestHeader ("X-PINGOTHER", "pingpong");
-                xhr.setRequestHeader ("Content-Type", "text/html/name");
-                xhr.onreadystatechange = handler;
-                xhr.send ();
-            </script>
+            </span>
+            <span class="product">
+                <span class="pick">
+                    <img id="3 Day Detox" src="3 Day Detox.png" alt="3 Day Detox.png image" width="100%" height="195%"/>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </span>
+                <span class="details">
+                    <div class="name">3 Day Detox</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                    <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>1
+        <nav class="product_list">
+            <span class="product">
+                <span class="pick">
+                    <img id="3-Step System, Combination to Oily" src="3-Step System, Combination to Oily.png" alt="3-Step System, Combination to Oily.png image" width="100%" height="195%"/>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </span>
+                <span class="details">
+                <div class="name">Nutriance, Combination to Oily</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <span class="pick">
+                    <img id="3-Step System, Normal to Dry" src="3-Step System, Normal to Dry.png" alt="3-Step System, Normal to Dry.png image" width="100%" height="195%"/>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </span>
+                <span class="details">
+                <div class="name">Nutriance, Normal to Dry</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>2
+        <nav class="product_list">
+            <span class="product">
+                <span class="pick">
+                    <img id="Acidophilus Plus" src="Acidophilus Plus.png" alt="Acidophilus Plus.png image" width="100%" height="195%"/>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </span>
+                <span class="details">
+                <div class="name">Acidophilus Plus</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <span class="pick">
+                    <img id="All Natural Fibre" src="All Natural Fibre.png" alt="All Natural Fibre.png image" width="100%" height="195%"/>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </span>
+                <span class="details">
+                <div class="name">All Natural Fibre</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>3
     </body>
-    <script src=""></script>
+    <footer class="action">
+        <div class="action">
+            <b id="sab" href="">SAB</b>
+            <a id="call_neolife" href="#">Call Neolife</a>
+            <a id="call_nafi" href="#">Call Nafi</a>
+            <a id="nafdac" href="#">NAFDAC</a>
+            <a id="usda"  href="#">USDA</a>
+        </div>
+    </footer>
 </html>
