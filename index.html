@@ -316,17 +316,76 @@
             height: initial;
         }
 
-        span.pick {
+        div.pick {
             text-align: center;
             background-color: transparent;
             padding-top: 0.3%;
             padding-bottom: 0%;
             padding-left: 0%;
+            padding-right: 0%;
+            word-spacing: 100%;
             margin: 0%;
             width: auto;
             flex-basis: content;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+        }
+
+        span.fact {
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 0.5%;
+            margin-right: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: green;
+            background-color: transparent;
+        }
+
+        span.ingredients {
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 10%;
+            margin-right: 0.5%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: green;
+            background-color: transparent;
+        }
+
+        div.price {
+            align-items: center;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: white;
+            background-color: green;
+        }
+
+        div.price:hover {
+            background-color: rgb(5, 5, 5);
+            color: green;
         }
 
         span.details {
@@ -343,7 +402,7 @@
             width: auto;
             color: mintcream;
             font-family: Verdana;
-            font-size: 142%;
+            font-size: 125%;
             font-weight: 200;
             word-spacing: 5px;
             background-color: green;
@@ -365,7 +424,7 @@
             width: auto;
             color: mintcream;
             font-family: Verdana;
-            font-size: 142%;
+            font-size: 148%;
             font-weight: 200;
             background-color: darkred;
             padding-top: 0.5%;
@@ -385,7 +444,7 @@
             width: auto;
             color: mintcream;
             font-family: Verdana;
-            font-size: 142%;
+            font-size: 127%;
             font-weight: 200;
             word-spacing: 5px;
             background-color: green;
@@ -399,29 +458,6 @@
             margin-right: 0%;
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
-        }
-
-        div.price {
-            align-items: center;
-            text-align: center;
-            font-size: xx-large;
-            font-family: 'Poppins';
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
-            padding-left: 1%;
-            padding-right: 1%;
-            margin-left: 40%;
-            margin-right: 40%;
-            margin-top: 3%;
-            margin-bottom: 3%;
-            border-radius: 50px;
-            color: green;
-            background-color: white;
-        }
-
-        div.price:hover {
-            background-color: rgb(5, 5, 5);
-            color: green;
         }
 
         a:link{
@@ -510,20 +546,12 @@
     </article>
         <nav class="product_list">
             <span class="product">
-                <span class="pick">
-                    <img id="3 Day Detox" src="3 Day Detox.png" alt="3 Day Detox.png image" width="100%" height="195%"/>
+                <div class="pick">
+                    <img id="3 Day Detox" src="3 Day Detox.png" alt="3 Day Detox.png image" width="100%" height="195%"/><br><br>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
                     <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
-                </span>
-                <span class="details">
-                    <div class="name">3 Day Detox</div><br><span class="supplement">Diabetes Supplement</span><br><br>
-                    <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
-                </span>
-            </span>
-            <span class="product">
-                <span class="pick">
-                    <img id="3 Day Detox" src="3 Day Detox.png" alt="3 Day Detox.png image" width="100%" height="195%"/>
-                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
-                </span>
+                </div>
                 <span class="details">
                     <div class="name">3 Day Detox</div><br><span class="supplement">Diabetes Supplement</span><br><br>
                     <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
@@ -532,20 +560,24 @@
         </nav>1
         <nav class="product_list">
             <span class="product">
-                <span class="pick">
+                <div class="pick">
                     <img id="3-Step System, Combination to Oily" src="3-Step System, Combination to Oily.png" alt="3-Step System, Combination to Oily.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
                     <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
-                </span>
+                </div>
                 <span class="details">
                 <div class="name">Nutriance, Combination to Oily</div><br><span class="supplement">Diabetes Supplement</span><br><br>
                 <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
                 </span>
             </span>
             <span class="product">
-                <span class="pick">
+                <div class="pick">
                     <img id="3-Step System, Normal to Dry" src="3-Step System, Normal to Dry.png" alt="3-Step System, Normal to Dry.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
                     <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
-                </span>
+                </div>
                 <span class="details">
                 <div class="name">Nutriance, Normal to Dry</div><br><span class="supplement">Diabetes Supplement</span><br><br>
                 <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
@@ -554,26 +586,358 @@
         </nav>2
         <nav class="product_list">
             <span class="product">
-                <span class="pick">
+                <div class="pick">
                     <img id="Acidophilus Plus" src="Acidophilus Plus.png" alt="Acidophilus Plus.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
                     <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
-                </span>
+                </div>
                 <span class="details">
                 <div class="name">Acidophilus Plus</div><br><span class="supplement">Diabetes Supplement</span><br><br>
                 <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
                 </span>
             </span>
             <span class="product">
-                <span class="pick">
+                <div class="pick">
                     <img id="All Natural Fibre" src="All Natural Fibre.png" alt="All Natural Fibre.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
                     <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
-                </span>
+                </div>
                 <span class="details">
                 <div class="name">All Natural Fibre</div><br><span class="supplement">Diabetes Supplement</span><br><br>
                 <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
                 </span>
             </span>
         </nav>3
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="All-C" src="All-C.png" alt="All-C.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">All-C</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Aloe Vera Gel" src="Aloe Vera Gel.png" alt="Aloe Vera Ge.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Aloe Vera Gel</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>4
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Aloe Vera Plus" src="Aloe Vera Plus.png" alt="Aloe Vera Plus.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Aloe Vera Plus</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Ami Tone 90 Tablets" src="Ami Tone 90 Tablets.png" alt="Ami Tone 90 Tablets.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Ami Tone 90 Tablets</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>5
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Balancing Tonic" src="Balancing Tonic.png" alt="Balancing Tonic.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Balancing Tonic</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Betagard" src="Betagard.png" alt="Betagard.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Betagard</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>6
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Beta-Gest Digestive Aid" src="Beta-Gest Digestive Aid.png" alt="Beta-Gest Digestive Aid.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Beta-Gest</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Bio-Tone" src="Bio-Tone.png" alt="Bio-Tone.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Bio-Tone</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>7
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Botanical Healthy Balance" src="Botanical Healthy Balance.png" alt="Botanical Healthy Balance.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Botanical Healthy Balance</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Carotenoid Complex" src="Carotenoid Complex.png" alt="Carotenoid Complex.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Carotenoid Complex</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>8
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Breakfast Solution" src="Breakfast Solution.png" alt="Breakfast Solution.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Breakfast Solution</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>9
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Chelated Cal Mag with 500 IU Vitamin D3 90 Tablets" src="Chelated Cal Mag with 500 IU Vitamin D3 90 Tablets.png" alt="Chelated Cal Mag with 500 IU Vitamin D3 90 Tablets.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Chelated Cal Mag with 500 IU Vitamin D3</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Cleansing Gel Nutriance" src="Cleansing Gel Nutriance.png" alt="Cleansing Gel Nutriance.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Cleansing Gel Nutriancex</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>10
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Cleansing Milk" src="Cleansing Milk.png" alt="Cleansing Milk.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Cleansing Milk</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="CoQ10 Mitochondrial Energy Complex" src="CoQ10 Mitochondrial Energy Complex.png" alt="CoQ10 Mitochondrial Energy Complex.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">CoQ10 Mitochondrial Energy Complex</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>11
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Cruciferous Plus" src="Cruciferous Plus.png" alt="Cruciferous Plus.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Cruciferous Plus</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Endurance (Liver Plus C)" src="Endurance (Liver Plus C).png" alt="Endurance (Liver Plus C).png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Endurance (Liver Plus C)</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>12
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Enriching Conditioner" src="Enriching Conditioner.png" alt="Enriching Conditioner.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Enriching Conditioner</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Enzyme Digestive Aid" src="Enzyme Digestive Aid.png" alt="Enzyme Digestive Aid.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Enzyme Digestive Aid</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>13
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Beta-Zyme" src="Beta-Zyme.png" alt="Beta-Zyme.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Beta-Zyme</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="Garlic Allium Complex" src="Garlic Allium Complex.png" alt="Garlic Allium Complex.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Garlic Allium Complex</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>14
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Herbal Rest And Relax" src="Herbal Rest And Relax.png" alt="Herbal Rest And Relax.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Herbal Rest And Relax</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+            <span class="product">
+                <div class="pick">
+                    <img id="NeoLifeTea 15 Sticks Single" src="NeoLifeTea 15 Sticks Single.png" alt="NeoLifeTea 15 Sticks Single.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">NeoLifeTea 15 Sticks Single</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>15
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="Omega 3 Salmon Oil Plus 90 Capsules" src="Omega 3 Salmon Oil Plus 90 Capsules.png" alt="Omega 3 Salmon Oil Plus 90 Capsules.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">Omega 3 Salmon Oil Plus</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>16
+        <nav class="product_list">
+            <span class="product">
+                <div class="pick">
+                    <img id="PhytoDefence 30 Sachets Single" src="PhytoDefence 30 Sachets Single.png" alt="PhytoDefence 30 Sachets Single.png image" width="100%" height="195%"/>
+                    <span class="facts"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Facts.png" alt="Facts.png image" width="138" height="60"></a></span>
+                    <span class="ingredients"><a href="snhttps://shopneolife.com/www/shop/product/2787i"><img src="Ingredients.png" alt="Ingredients.png image" width="226" height="65"></a></span><br><br>
+                    <div class="price"><a href="https://shopneolife.com/nafineolife/shop/product/2514N">Buy</a></div>
+                </div>
+                <span class="details">
+                <div class="name">PhytoDefence 30 Sachets Single</div><br><span class="supplement">Diabetes Supplement</span><br><br>
+                <div class="prescription">Take 3Daily<br>1@Morning 1@Noon 1@Night</div>
+                </span>
+            </span>
+        </nav>17
     </body>
     <footer class="action">
         <div class="action">
