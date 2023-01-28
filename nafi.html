@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-10">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieBreakfast Solutionport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nafineolife">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;400&family=Tangerine:wght@400;1400&family=Unna&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NAFiNEOLife</title>
+    <a id="domain" href="https://www.nafineolife.com"></a>
+
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            width: initial;
+            height: initial;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0.3%;
+            padding-right: 0.3%;
+            margin-top: 0%;
+            margin-bottom: 0.5%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-radius: 4px;
+            background-color: white;
+            float: center;
+            position: sticky;
+        }
+
+        header {
+            background-color: rgb(5, 5, 5);
+            padding-top: 2%;
+            padding-bottom: 3%;
+            padding-left: 0.2%;
+            padding-right: 0.2%;
+            margin-top: 0.3%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
+            float: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            position: static;
+        }
+
+        header span {
+            background-color: transparent;
+            padding-top: 0.3%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1%;
+            margin-right: 1%;
+            width: initial;
+            height: initial;
+            flex-basis: content;
+            float: left;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        header div {
+            align-items: center;
+            align-items: center;
+            text-align: center;
+            background-color: transparent;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 0.5px;
+            margin-bottom: 0px;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
+            flex-basis: auto;
+            float: center;
+        }
+
+        article.opened {
+            text-align: center;
+            float: center;
+            color: white;
+            background-color: rgb(5, 5, 5);
+            padding-top: 0.5%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
+            position: static;
+        }
+
+        div.welcome {
+            color: white;
+            font-family: 'Segoe UI';
+            font-size: 300%;
+            font-weight: 400;
+            word-spacing: 0px;
+            background-color: rgb(15, 144, 10);
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
+        }
+
+        a#home {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            width: initial;
+            height: initial;
+        }
+
+        b#About {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            width: initial;
+            height: initial;
+        }
+
+        a#See {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1%;
+            margin-right: 1%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Sponsor {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Events {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Countries {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Centers {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            width: initial;
+            height: initial;
+        }
+
+        a#Matrix {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            width: initial;
+            height: initial;
+        }
+
+        div.marketing {
+            display: ruby;
+            color: white;
+            background-color: rgb(5, 5, 5);
+            align-items: center;
+            text-align: center;
+            font-family: Verdana, Tahoma;
+            font-size: 100%;
+            padding-top: 4px;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+        }
+
+        h1#unique {
+            text-align: center;
+            color: white;
+            font-size: 300%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            background-color: green;
+        }
+
+        div.intro {
+            background-color: rgb(5, 5, 5);
+            padding-top: 0%;
+            padding-bottom: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        img#Neolife_Products_2 {
+            width: initial;
+            height: initial;
+        }
+
+        h2#profession {
+            font-family: 'Vardana';
+            font-size: 200%;
+            font-weight: 400;
+            color: white;
+            background-color: darkred;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            padding-left: 0.9%;
+            padding-right: 0.9%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            width: initial;
+            height: initial;
+        }
+
+        h5#zero_150 {
+            font-family: 'Vardana';
+            font-size: 200%;
+            font-weight: 400;
+            color: white;
+            background-color: rgb(5, 5, 5);
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 0.9%;
+            padding-right: 0.9%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            width: initial;
+            height: initial;
+        }
+
+        h4#message {
+            font-family: 'Segoe UI';
+            font-size: 200%;
+            font-weight: 400;
+            color: white;
+            background-color: rgb(15, 144, 10);
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 0.9%;
+            padding-right: 0.9%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            width: initial;
+            height: initial;
+
+        }
+
+        nav.product_list_one {
+            display: grid;
+            background-color: white;
+            color: rgb(5, 5, 5);
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            float: center;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            width: initial;
+            height: initial;
+        }
+
+        nav.product_list {
+            display: flex;
+            background-color: white;
+            color: rgb(5, 5, 5);
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            float: center;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            width: initial;
+            height: initial;
+        }
+
+        span.product_one {
+            align-items: center;
+            text-align: center;
+            padding-top: 0%;
+            padding-bottom: 1%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0.1%;
+            margin-right: 0.1%;
+            background-color: rgb(5, 5, 5);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            float: center;
+            width: initial;
+            height: initial;
+        }
+
+        span.product {
+            align-items: center;
+            text-align: center;
+            padding-top: 0%;
+            padding-bottom: 1%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-left: 0.1%;
+            margin-right: 0.1%;
+            background-color: rgb(5, 5, 5);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            float: center;
+            width: initial;
+            height: initial;
+        }
+
+        div.pick_one {
+            text-align: center;
+            background-color: transparent;
+            padding-top: 0.3%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            word-spacing: 100%;
+            margin: 0%;
+            width: auto;
+            flex-basis: content;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        div.pick {
+            text-align: center;
+            background-color: transparent;
+            padding-top: 0.3%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            word-spacing: 100%;
+            margin: 0%;
+            width: auto;
+            flex-basis: content;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        span.facts_one {
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 0.5%;
+            margin-right: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: green;
+            background-color: transparent;
+        }
+
+        span.facts {
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 0.5%;
+            margin-right: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: green;
+            background-color: transparent;
+        }
+
+        span.ingredients_one {
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 10%;
+            margin-right: 0.5%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: green;
+            background-color: transparent;
+        }
+
+        span.ingredients {
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 10%;
+            margin-right: 0.5%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: green;
+            background-color: transparent;
+        }
+
+        div.price_one {
+            align-items: center;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: white;
+            background-color: green;
+        }
+
+        div.price {
+            align-items: center;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Poppins';
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 50px;
+            color: white;
+            background-color: green;
+        }
+
+        div.price_one:hover {
+            background-color: rgb(5, 5, 5);
+            color: green;
+        }
+
+        div.price:hover {
+            background-color: rgb(5, 5, 5);
+            color: green;
+        }
+
+        span.details_one {
+            color: white;
+            background-color: rgb(5, 5, 5);
+            font-size: 220%;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        span.details {
+            background-color: rgb(5, 5, 5);
+            padding-top: 0%;
+            padding-bottom: 0%;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        div.name_one {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 100%;
+            font-weight: 200;
+            word-spacing: 5px;
+            background-color: green;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        div.name {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 100%;
+            font-weight: 200;
+            word-spacing: 5px;
+            background-color: green;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        span.supplement_one {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 100%;
+            font-weight: 200;
+            background-color: darkred;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0.7%;
+            padding-right: 0.7%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-radius: 9px;
+        }
+
+        span.supplement {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 100%;
+            font-weight: 200;
+            background-color: darkred;
+            padding-top: 0.5%;
+            padding-bottom: 0.9%;
+            padding-left: 0.7%;
+            padding-right: 0.7%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-radius: 9px;
+        }
+
+        div.prescription_one {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 100%;
+            font-weight: 200;
+            word-spacing: 5px;
+            background-color: green;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        div.prescription {
+            align-items: center;
+            text-align: center;
+            width: auto;
+            color: mintcream;
+            font-family: Verdana;
+            font-size: 127%;
+            font-weight: 200;
+            word-spacing: 5px;
+            background-color: green;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        a:link{
+            color: rgb(5, 5, 5);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        div.action {
+            padding-top: 0%;
+            padding-bottom: 3%;
+            background-color: rgb(5, 5, 5);
+            font-size: 100%;
+        }
+
+        a#call_neolife {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 0%;
+            margin-left: 5%;
+            margin-right: 5%;
+            color: green;
+        }
+
+        a#call_neolife:hover {
+            color: white;
+        }
+
+        a#call_nafi {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 5%;
+            margin-right: 5%;
+            color: green;
+        }
+
+        a#call_nafi:hover {
+            color: white;
+        }
+
+        a#nafdac {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 5%;
+            margin-right: 5%;
+            color: green;
+        }
+
+        a#nafdac:hover {
+            color: white;
+        }
+
+        a#usda {
+            font-family: 'Poppins';
+            font-size: 300%;
+            width: auto;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 5%;
+            margin-right: 5%;
+            color: green;
+        }
+
+        a#usda:hover {
+            color: white;
+        }
+
+        span#sab {
+            display: inline;
+            float: left;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        footer.action {
+            background-color: rgb(5, 5, 5);
+            font-size: 50%;
+            padding-top: 1%;
+            padding-bottom: 0%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <span class="logo"><img src="NafiNEOLife 2.png" alt="NafiNEOLife 2.png LOGO" width="140" height="140"></span>
+            <a id="Home" href="index.html"><img aria-details="Home" src="Home V2.png" alt="Home V2.png" width="141" height="141"></a>
+            <b id="About" href="#"><img id="About" src="About Us V2.png" alt="About Us V2.png" width="141" height="141"></b>
+            <a id="See" href="#"><img id="See" src="See V2.png" alt="See V2.png" width="140" height="141"></a>
+            <a id="Sponsor V2" href="#"><img id="Sponsor" src="Sponsor V2.png" alt="Sponsor V2.png" width="141" height="141"></a>
+            <a id="Events"  href="#"><img id="Events" src="Events.png" alt="Events.png" width="141" height="141"></a>
+            <a id="Countries"  href="#"><img id="Countries" src="Countries.png" alt="Countries.png" width="141" height="141"></a>
+            <a id="Centers"  href="#"><img id="Gofor Centers" src="Gofor Centers.png" alt="Gofor Centers.png" width="141" height="141"></a>
+            <a id="Matrix" href="#"><img id="Matrix" src="Matrix.png" alt="Matrix.png" width="141" height="141"></a>
+        </div>
+    </header>
+    <article class="opened">
+        <div class="welcome">NAFi?<br>
+            </div>
+        <div class="marketing"><br>
+            Nafi is a first name extract of Nafiu Jibril.<br>A NEOLIFE Network Marketing professional.<br>
+            Nafi is also a smart marketer.<br>And simplifying networking success, by designing affiliate websites for start-ups and all interesting NEOLIFE members.<br>At an affordable costs.<br>
+        <img id="NafiNEOLife 2" src="NafiNEOLife 2.png" alt="NafiNEOLife 2.png image" width="50%" height="50%"/><br>
+        </div>
+        <div class="intro"><h1 id="unique">Why UNIQUE?</h1>
+            <h2 id="profession">- An Enthusiastic DTP Syntax.<br>- A Smart Brain.<br><h5 id="zero_150">- Perceiving Beyond 95 Percent of</h5>
+                <h4 id="message">The Cashflow Quadrant.</h4>
+            </h2>
+        </div>
+    </article>
+    <nav class="product_list_one">
+        <span class="product_one">
+            <div class="pick_one">
+                <img id="3 Day Detox" src="3 Day Detox.png" alt="3 Day Detox.png image" width="100%" height="195%"/>
+            </div>
+            <span class="details_one">My HOBBY?<br>
+            <div class="name_one">- Staying A Netizin.<br>- A Web Developer.<br>- Strategy Production.<br>- Rebranding.<br>- Affiliate Marketing.<br>
+            - Working Smart.<br>- Being Boss.<br>Etcetera.</div>
+            </span>
+        </span>
+    </nav>
+    </body>
+    <footer class="action">
+        <span class="sab">
+            <a id="sab" href=""><img src="sab.png" alt="sab.png" width="100" height="100"></a>
+        </span><br><br>
+        <div class="action">
+            <a id="call_neolife" href="#">Call Neolife</a>
+            <a id="call_nafi" href="#">Call Nafi</a>
+            <a id="nafdac" href="#">NAFDAC</a>
+            <a id="usda"  href="#">USDA</a>
+        </div>
+    </footer>
+</html>
