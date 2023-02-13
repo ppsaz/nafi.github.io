@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta Content-Type="text/html" charset='utf-8'>
+    <meta name="description" content="text/html">
     <link rel="shortcut icon" href="NafiNEOLife 2.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="nafineolife">
+    <meta name="description" content="NAFiNEOLife">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;590;400&family=Tangerine:wght@400;1400&family=Unna&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>NAFiNEOLife</title>
-    <a title="domain" id="domain" href="https://www.nafineolife.com"></a>
-
+    <title>See</title>
+    <a title="domain" id="domain" href="https://www.nafineolife.com/see"></a>
     <style>
         body {
             align-items: center;
@@ -30,8 +29,8 @@
             border-radius: 4px;
             background-color: white;
             float: center;
-            position: sticky;
-            }
+            position: static;
+        }
 
         header {
             background-color: rgb(5, 5, 5);
@@ -40,14 +39,14 @@
             padding-left: 0.2%;
             padding-right: 0.2%;
             margin-top: 0.3%;
-            margin-bottom: 0%;
+            margin-bottom: 0.5%;
             margin-left: 0%;
             margin-right: 0%;
             width: initial;
             height: initial;
             float: center;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 0px;
             position: static;
@@ -59,8 +58,8 @@
             padding-bottom: 0%;
             padding-left: 0%;
             padding-right: 0%;
-            margin-left: 1%;
-            margin-right: 1%;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
             width: initial;
             height: initial;
             flex-basis: content;
@@ -160,7 +159,7 @@
             height: initial;
         }
 
-        article.see_youtube {
+        div.media {
             text-align: center;
             float: center;
             color: white;
@@ -178,31 +177,11 @@
             position: static;
         }
 
-        div.youtube {
-            color: white;
-            font-family: 'Segoe UI';
-            font-size: 200%;
-            font-weight: 400;
-            word-spacing: 0px;
-            background-color: darkred;
-            padding-top: 0.2%;
-            padding-bottom: 0.2%;
-            padding-left: 0%;
-            padding-right: 0%;
-            margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 41%;
-            margin-right: 41%;
-            border-radius: 50px;
-            width: initial;
-            height: initial;
-        }
-
-        div.see_link {
+        div.media_link {
             text-align: center;
+            font-size: 20px;
             float: left;
             color: white;
-            font-size: 300%;
             background-color: rgb(5, 5, 5);
             padding-top: 0.5%;
             padding-bottom: 0.5%;
@@ -232,73 +211,42 @@
             position: static;
         }
 
-        a#ny1 {
-            color: darkred;
-        }
-
-        a#ny1:hover {
-            color: green;
-            background-color: rgb(5, 5, 5);
-        }
-
-        a#ny2 {
-            color: darkred;
-        }
-
-        a#ny2:hover {
-            color: green;
-            background-color: rgb(5, 5, 5);
-        }
-
-        a#ny3 {
-            color: darkred;
-        }
-
-        a#ny3:hover {
-            color: green;
-            background-color: rgb(5, 5, 5);
-        }
-
-        a#ny4 {
-            color: darkred;
-        }
-
-        a#ny4:hover {
-            color: green;
-            background-color: rgb(5, 5, 5);
-        }
-
-        a#ny5 {
-            color: darkred;
-        }
-
-        a#ny5:hover {
-            color: green;
-            background-color: rgb(5, 5, 5);
-        }
-
-        article.see_facebook {
-            text-align: center;
-            float: center;
+        div.youtube {
             color: white;
-            background-color: rgb(5, 5, 5);
-            padding-top: 0%;
-            padding-bottom: 0%;
+            font-family: 'Segoe UI';
+            font-size: 20px;
+            font-weight: 400;
+            word-spacing: 0px;
+            background-color: darkred;
+            padding-top: 0.2%;
+            padding-bottom: 0.2%;
             padding-left: 0%;
             padding-right: 0%;
-            margin-top: 0.3;
-            margin-bottom: 0.3%;
-            margin-left: 0%;
-            margin-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 35%;
+            margin-right: 35%;
+            border-radius: 50px;
             width: initial;
             height: initial;
-            position: static;
+        }
+
+        div.media_link a.yt {
+            color: darkred;
+        }
+
+        div.media_link a.yt:hover {
+            color: green;
+        }
+
+        div.media_link a.link:hover {
+            color: darkred;
         }
 
         div.facebook {
             color: white;
             font-family: 'Segoe UI';
-            font-size: 200%;
+            font-size: 20px;
             font-weight: 400;
             word-spacing: 0px;
             background-color: blue;
@@ -308,35 +256,29 @@
             padding-right: 0%;
             margin-top: 0%;
             margin-bottom: 0%;
-            margin-left: 41%;
-            margin-right: 41%;
+            margin-left: 35%;
+            margin-right: 35%;
             border-radius: 50px;
             width: initial;
             height: initial;
         }
 
-        article.see_whatsapp {
-            text-align: center;
-            float: center;
-            color: white;
-            background-color: rgb(5, 5, 5);
-            padding-top: 0%;
-            padding-bottom: 0%;
-            padding-left: 0%;
-            padding-right: 0%;
-            margin-top: 0.3%;
-            margin-bottom: 0.3%;
-            margin-left: 0%;
-            margin-right: 0%;
-            width: initial;
-            height: initial;
-            position: static;
+        div.media_link a.fb {
+            color: blue;
+        }
+
+        div.media_link a.fb:hover {
+            color: green;
+        }
+
+        div.media_link a.link:hover {
+            color: blue;
         }
 
         div.whatsapp {
             color: white;
             font-family: 'Segoe UI';
-            font-size: 200%;
+            font-size: 20px;
             font-weight: 400;
             word-spacing: 0px;
             background-color: green;
@@ -346,35 +288,29 @@
             padding-right: 0%;
             margin-top: 0%;
             margin-bottom: 0%;
-            margin-left: 41%;
-            margin-right: 41%;
+            margin-left: 35%;
+            margin-right: 35%;
             border-radius: 50px;
             width: initial;
             height: initial;
         }
 
-        article.see_others {
-            text-align: center;
-            float: center;
-            color: white;
-            background-color: rgb(5, 5, 5);
-            padding-top: 0%;
-            padding-bottom: 0%;
-            padding-left: 0%;
-            padding-right: 0%;
-            margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 0%;
-            margin-right: 0%;
-            width: initial;
-            height: initial;
-            position: static;
+        div.media_link a.whtsapp {
+            color: lime;
+        }
+
+        div.media_link a.whtsapp:hover {
+            color: green;
+        }
+
+        div.media_link a.whtsapp:link {
+            color: lime;
         }
 
         div.others {
             color: white;
             font-family: 'Segoe UI';
-            font-size: 200%;
+            font-size: 20px;
             font-weight: 400;
             word-spacing: 0px;
             background-color: darkmagenta;
@@ -384,11 +320,23 @@
             padding-right: 0%;
             margin-top: 0%;
             margin-bottom: 0%;
-            margin-left: 41%;
-            margin-right: 41%;
+            margin-left: 35%;
+            margin-right: 35%;
             border-radius: 50px;
             width: initial;
             height: initial;
+        }
+
+        div.media_link a.oth {
+            color: darkmagenta;
+        }
+
+        div.media_link a.oth:hover {
+            color: green;
+        }
+
+        div.media_link a.oth:link {
+            color: darkmagenta;
         }
 
         a:link{
@@ -408,16 +356,31 @@
             padding-top: 0%;
             padding-bottom: 3%;
             background-color: rgb(5, 5, 5);
-            font-size: 100%;
+            width: initial;
+            height: initial;
+        }
+
+        span#call_us {
+            display: grid;
+            text-align: center;
+            font-size: 20px;
+            color: darkmagenta;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
         }
 
         a#call_neolife {
+            text-align: center;
             font-family: 'Poppins';
-            font-size: 300%;
-            width: auto;
+            font-size: 25px;
+            width: initial;
+            height: initial;
             padding-left: 0%;
-            margin-left: 5%;
-            margin-right: 5%;
+            padding-right: 0%;
+            margin-left: 34%;
+            margin-right: 34%;
             color: green;
         }
 
@@ -426,13 +389,15 @@
         }
 
         a#call_nafi {
+            text-align: center;
             font-family: 'Poppins';
-            font-size: 300%;
-            width: auto;
+            font-size: 25px;
+            width: initial;
+            height: initial;
             padding-left: 0%;
             padding-right: 0%;
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-left: 34%;
+            margin-right: 34%;
             color: green;
         }
 
@@ -440,14 +405,31 @@
             color: white;
         }
 
-        a#nafdac {
+        a#sab {
             font-family: 'Poppins';
-            font-size: 300%;
-            width: auto;
+            font-size: 20px;
+            width: initial;
+            height: initial;
             padding-left: 0%;
             padding-right: 0%;
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: green;
+        }
+
+        a#sab:hover {
+            color: white;
+        }
+
+        a#nafdac {
+            font-family: 'Poppins';
+            font-size: 20px;
+            width: initial;
+            height: initial;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 3%;
+            margin-right: 3%;
             color: green;
         }
 
@@ -455,115 +437,113 @@
             color: white;
         }
 
-        a#usda {
-            font-family: 'Poppins';
-            font-size: 300%;
-            width: auto;
-            padding-left: 0%;
-            padding-right: 0%;
-            margin-left: 5%;
-            margin-right: 5%;
-            color: green;
-        }
-
-        a#usda:hover {
-            color: white;
-        }
-
         span#sab {
-            display: inline;
-            float: left;
+            text-align: center;
             margin-left: 0%;
             margin-right: 0%;
+            width: initial;
+            height: initial;
+        }
+
+        span#nafdac {
+            text-align: center;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: initial;
+            height: initial;
         }
 
         footer.action {
+            text-align: center;
             background-color: rgb(5, 5, 5);
-            font-size: 50%;
             padding-top: 1%;
-            padding-bottom: 0%;
+            padding-bottom: 1%;
+            width: initial;
+            height: initial;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
-
     </style>
 
 </head>
 <body>
     <header>
         <div class="menu">
-            <span class="logo"><img src="NafiNEOLife 2.png" alt="NafiNEOLife 2.png LOGO" width="140" height="140"></span>
-            <a id="home" href="index.html"><img aria-details="Home" src="Home V2.png" alt="Home V2.png" width="141" height="141"></a>
-            <a id="about" href="nafi.html"><img id="about_us" src="About Us V2.png" alt="About Us V2.png" width="141" height="141"></a>
-            <b id="see" href="see.html"><img id="see_neolife" src="See V2.png" alt="See V2.png" width="140" height="141"></b>
-            <a id="sponsor V2" href="sponsor.html"><img id="your_sponsor" src="Sponsor V2.png" alt="Sponsor V2.png" width="141" height="141"></a>
-            <a id="events"  href="events.html"><img id="my_events" src="Events.png" alt="Events.png" width="141" height="141"></a>
-            <a id="countries"  href="countries.html"><img id="markets" src="Countries.png" alt="Countries.png" width="141" height="141"></a>
-            <a id="centers"  href="centers.html"><img id="ignition" src="Gofor Centers.png" alt="Gofor Centers.png" width="141" height="141"></a>
-            <a id="matrix" href="#"><img id="matrix_master" src="Matrix.png" alt="Matrix.png" width="141" height="141"></a>
+            <span class="logo"><img src="NafiNEOLife 2.png" alt="NafiNEOLife 2.png LOGO" width="59" height="59"></span>
+            <a id="home" href="index.html"><img aria-details="Home" src="Home V2.png" alt="Home V2.png" width="59" height="59"></a>
+            <a id="about" href="nafi.html"><img id="about_us" src="About Us V2.png" alt="About Us V2.png" width="59" height="59"></a>
+            <b id="see" href="see.html"><img id="see_neolife" src="See V2.png" alt="See V2.png" width="58" height="59"></b>
+            <a id="sponsor V2" href="sponsor.html"><img id="your_sponsor" src="Sponsor V2.png" alt="Sponsor V2.png" width="59" height="59"></a>
+            <a id="events" href="events.html"><img id="my_events" src="Events.png" alt="Events.png" width="59" height="59"></a>
+            <a id="countries"  href="countries.html"><img id="markets" src="Countries.png" alt="Countries.png" width="59" height="59"></a>
+            <a id="centers"  href="centers.html"><img id="ignition" src="Gofor Centers.png" alt="Gofor Centers.png" width="59" height="59"></a>
+            <a id="matrix" href="matrix.html"><img id="matrix_master" src="Matrix.png" alt="Matrix.png" width="59" height="59"></a>
         </div>
     </header>
-    <article class="see_youtube"><br>
-        <div class="youtube">YOUTUBE</div>
-        <div class="see_link">
-            <a id="ny1" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="ny2" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="ny3" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="ny4" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="ny5" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+    <div class="media"><br>
+        <div class="youtube">YOUTUBE</div><br>
+        <div class="media_link">
+            <a class="yt" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="yt" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="yt" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="yt" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="yt" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
         </div>
         <div class="see_image">
             <img src="All-C.png" alt="All-C.png" width="40%" height="105%">
-        </div>
-    </article>
-    <article class="see_facebook"><br>
-        <div class="facebook">FACEBOOK</div>
-        <div class="see_link">
-            <a id="nf1" href="https://web.facebook.com/NeoLifeClub">Official NeoLife United State</a><br>
-            <a id="nf1" href="https://web.facebook.com/NeoLife.Africa/?_rdc=1&_rdr">Official NeoLife Africa</a><br>
-            <a id="nf1" href="https://web.facebook.com/NeoLife.Africa/?_rdc=1&_rdr">Official NeoLife Africa</a><br>
-            <a id="nf1" href="https://web.facebook.com/NeoLife.Africa/?_rdc=1&_rdr">Official NeoLife Africa</a><br>
-            <a id="nf1" href="https://web.facebook.com/NeoLife.Africa/?_rdc=1&_rdr">Official NeoLife Africa</a><br>
-        </div>
-        <div class="see_image">
-            <img src="All-C.png" alt="All-C.png" width="40%" height="105%">
-        </div>
-    </article>
-    <article class="see_whatsapp"><br>
-        <div class="whatsapp">Whatsapp</div>
-        <div class="see_link">
-            <a id="nw1" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="nw2" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="nw3" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="nw4" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="nw5" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+        </div><br>
+    </div>
+    <div class="media"><br>
+        <div class="facebook">FACEBOOK</div><br>
+        <div class="media_link">
+            <a class="fb" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="fb" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="fb" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="fb" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="fb" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
         </div>
         <div class="see_image">
             <img src="All-C.png" alt="All-C.png" width="40%" height="105%">
-        </div>
-    </article>
-    <article class="see_others"><br>
-        <div class="others">OTHERS</div>
-        <div class="see_link">
-            <a id="no1" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="no2" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="no3" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="no4" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
-            <a id="no5" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+        </div><br>
+    </div>
+    <div class="media"><br>
+        <div class="whatsapp">What'sapp</div><br>
+        <div class="media_link">
+            <a class="whtsapp" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="whtsapp" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="whtsapp" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="whtsapp" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="whtsapp" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
         </div>
         <div class="see_image">
             <img src="All-C.png" alt="All-C.png" width="40%" height="105%">
+        </div><br>
+    </div>
+    <div class="media"><br>
+        <div class="others">OTHERS</div><br>
+        <div class="media_link">
+            <a class="oth" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="oth" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="oth" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="oth" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
+            <a class="oth" href="https://www.youtube.com/@OfficialNeoLife">@OfficialNeoLife</a><br>
         </div>
-    </article>
-            <h1 id="enough_vids">Enough To Feel Better.<br>Now Your Urgency Response</h1>
+        <div class="see_image">
+            <img src="All-C.png" alt="All-C.png" width="40%" height="105%">
+        </div><br>
+    </div>
+            <h1 id="enough_vids">Enough To Feel Better.<br>Missing Something?<br>Please below</h1>
     </body>
-    <footer class="action">
+    <footer class="action"><br>
         <span class="sab">
-            <a id="sab" href=""><img src="sab.png" alt="sab.png" width="100" height="100"></a>
+            <a id="sab" href=""><img src="sab.png" alt="sab.png" width="55" height="55"></a>
+        </span>
+        <span class="nafdac">
+            <a id="nafdac" href=""><img src="NAFDAC.png" alt="NAFDAC.png" width="55" height="55"></a>
         </span><br><br>
         <div class="action">
-            <a id="call_neolife" href="tel:+8004325842">8004325842</a>
-            <a id="call_nafi" href="tel:+2348166049252">8166049252</a>
-            <a id="nafdac" href="#">NAFDAC</a>
-            <a id="usda"  href="#">KOSHER</a>
-        </div>
+            <span id="call_us">Call NEOLIFE<a id="call_neolife" href="tel:+8004325842">8004325842</a></span><br>
+            <span id="call_us">Call NAFiNEOLife<a id="call_nafi" href="tel:+2348166049252">8166049252</a></span>
+        </div><br>
     </footer>
 </html>
